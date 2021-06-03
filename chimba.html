@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<title>CHIMBA'S WORLD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('Images/20191207_145625.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("Images/20200506_120948.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("Images/20191208_151419.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars" style="color: aliceblue;"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"><span style="color:aliceblue;">HOME</span></a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user" style="color: aliceblue;"></i><span style="color:aliceblue;"> ABOUT</span></a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th" style="color: aliceblue;"></i><span style="color:aliceblue;"> PORTFOLIO<span style="color:aliceblue;"></span></a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope" style="color: aliceblue;"></i><span style="color:aliceblue;"> CONTACT</span></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search" style="color: aliceblue;"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;" img src="">
+    
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WELCOME TO <span class="w3-hide-small">CHIMBA'S</span> WORLD</span>
+    
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">HI, I'M CHIMBA</h3>
+  <p class="w3-center"><em>A Lhasa Apso</em></p>
+  <p>Hi everyone. I'm Chimba, a Lhasa Apso. Taken care by my lovely owner Sanju Sivan. I love wandering around the premises of my home. I also love to play with children. My master always takes me fo outing on his bike and i love being with him always.
+      I have a big doll to play with when i am alone. Aww, I forgot to tell you about my lovely achan and amma. They too take care of me well. My amma gives me delicious food My achan always come home early from work to play with me. By the way, welcome to 
+      my website. You can know a lot about me here.
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Chimba</b></p><br>
+      <img src="Images/20191208_151520 dp.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>The Lhasa Apso originated in Tibet.
+           This small breed was used as a sentinel dog indoors while the larger Tibetan Mastiff remained outside.
+            In the early 1900s, a few of the breed were brought by military men returning from the Indian subcontinent to England, where the breed was referred to as the "Lhasa Terrier".
+
+        The original American pair of Lhasas was a gift from Thubten Gyatso, 13th Dalai Lama to C. Suydam Cutting, arriving in the United States in 1933. Mr. Cutting had traveled in Tibet and met the Dalai Lama there. At this time, there was only one Lhasa Apso registered in England. 
+        The breed was at first called the Lhasa Terrier, later the Lhasa Apso. The American Kennel Club officially accepted the breed in 1935 in the Terrier Group, and in 1959 transferred the breed to the Non-Sporting Group. In the UK, they are placed in the Utility Group.</p>
+    </div>
+  </div>
+  
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">GALLERY</h3>
+  <p class="w3-center"><em>Here are some of my latest pictures.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="Images/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="1">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Images/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Images/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="3">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Images/4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="4">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="Images/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="5">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Images/6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="6">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Images/7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="7">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Images/8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="8">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide" >CONTACT MY MASTER</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">PING ME</h3>
+  
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="Images/new map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chalakudy, Thrissur, Kerala, IN<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 9961935162<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: sanju.sanjuksivan@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i></p>
+      
+        
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/sanju.sivan.543"><i class="fa fa-facebook-official w3-hover-opacity" ></i></a>
+    <a href="https://instagram.com/sanju.sanjuksivan?utm_medium=copy_link"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
